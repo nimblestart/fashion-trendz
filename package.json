@@ -1,0 +1,36 @@
+{
+  "name": "soccer-grid",
+  "version": "0.0.1",
+  "description": "Curated list of soccer training videos with search, filtering capabilities",
+  "scripts": {
+    "clean": "rimraf public",
+    "dev:tailwind": "npx tailwindcss -i src/css/tailwind.css -o public/css/styles.css --watch",
+    "dev:eleventy": "npx @11ty/eleventy --serve",
+    "build:tailwind": "npx tailwindcss -i src/css/tailwind.css -o public/css/styles.css --minify",
+    "build:eleventy": "SET ELEVENTY_PRODUCTION=true & npx @11ty/eleventy",
+    "dev": "npm-run-all clean --parallel dev:*",
+    "build": "SET NODE_ENV=production & npm-run-all clean build:tailwind build:eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nimblestart/soccer-grid.git"
+  },
+  "keywords": [
+    "eleventy",
+    "11ty",
+    "tailwind",
+    "tailwindcss"
+  ],
+  "author": "nimble start",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nimblestart/soccer-grid/issues"
+  },
+  "homepage": "https://github.com/nimblestart/soccer-grid",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^3.0.24"
+  }
+}
