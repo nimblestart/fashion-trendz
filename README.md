@@ -1,4 +1,4 @@
-# Fashion Trendz
+# Fashion Trendz test
 Curated list of latest fashion trends videos with search, filtering capabilities. Build using **E**leventy, **T**ailwind CSS, **I**sotope.
 * [View on Netlify](https://soccer-grid.netlify.app/)
 
